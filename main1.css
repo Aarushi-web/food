@@ -36,14 +36,14 @@ div.sticky {
    position: fixed;
    left: 0;
    bottom: 0;
-   width: 30%;
+   width: 27%;
    background-color: black;
    color: white;
    text-align: center;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2);
+  max-width: 420px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -52,7 +52,10 @@ border: 5px solid ;
 
 
 }
-
+.all , .all1, .all2, .all3, .all4
+{
+    display: flex;
+}
 .price {
   color: grey;
   font-size: 22px;
@@ -134,10 +137,68 @@ border: 5px solid ;
 .containerz:hover .middle {
   opacity: 1;
 }
-
 .text {
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px black;
+  background-color: white;
+  padding: 5px;
+    width: 81.75%;
+    height:800px;
+    float: inherit;
+background-color: black;
+    margin: auto;
+    color: white;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+    margin: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    margin: auto;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
